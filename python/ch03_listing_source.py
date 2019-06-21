@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 import threading
 import time
 import unittest
@@ -304,7 +304,7 @@ True                                                #G
 #D You can also pass SETs as inputs to ZINTERSTORE and ZUNIONSTORE, they behave as though they were ZSETs with all scores equal to 1
 #END
 '''
-
+conn = redis.Redis()
 def publisher(n):
     time.sleep(1)
     for i in xrange(n):
